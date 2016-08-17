@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="entity.Image" table="image">
+        <id name="imageId" type="java.lang.Integer">
+            <column name="imageId" />
+            <generator class="identity" />
+        </id>
+        <property name="imagePath" type="java.lang.String">
+            <column name="imagePath" length="255" not-null="true" />
+        </property>
+        <property name="screenYear" type="java.lang.String">
+            <column name="screenYear" length="4" not-null="true" />
+        </property>
+        <property name="screenMonth" type="java.lang.String">
+            <column name="screenMonth" length="2" not-null="true" />
+        </property>
+        <property name="screenDate" type="java.lang.String">
+            <column name="screenDate" length="2" not-null="true" />
+        </property>
+        <property name="screenHour" type="java.lang.String">
+            <column name="screenHour" length="2" not-null="true" />
+        </property>
+        <property name="screenMinute" type="java.lang.String">
+            <column name="screenMinute" length="2" not-null="true" />
+        </property>
+        <property name="screenSecond" type="java.lang.String">
+            <column name="screenSecond" length="2" not-null="true" />
+        </property>
+        <property name="plate" type="java.lang.String">
+            <column name="plate" length="15" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

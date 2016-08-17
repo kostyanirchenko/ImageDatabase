@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="450.0" styleClass=".root" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.views.ApplicationController">
+   <children>
+      <Button fx:id="addToDatabaseButton" layoutX="31.0" layoutY="29.0" mnemonicParsing="false" onAction="#addToDatabaseAction" prefHeight="56.0" prefWidth="150.0" text="Добавить в базу данных" />
+      <Button fx:id="aboutProgramButton" layoutX="95.0" layoutY="144.0" mnemonicParsing="false" onAction="#aboutProgramAction" prefHeight="56.0" prefWidth="150.0" text="О программе" />
+      <Button fx:id="databaseListButton" layoutX="31.0" layoutY="249.0" mnemonicParsing="false" onAction="#databaseListAction" prefHeight="68.0" prefWidth="208.0" text="Список файлов в базе данных" />
+      <Button fx:id="settingButton" layoutX="290.0" layoutY="76.0" mnemonicParsing="false" onAction="#settingAction" prefHeight="68.0" prefWidth="125.0" text="Удаление данных" />
+      <Button fx:id="exitButton" layoutX="304.0" layoutY="309.0" mnemonicParsing="false" onAction="#exitAction" prefHeight="56.0" prefWidth="111.0" text="Выход" />
+   </children>
+</AnchorPane>
